@@ -20,7 +20,7 @@ def add_item(tuple, list):
     item = int(input("Enter Item Number to Add: "))
 
     #check for exception
-    if 0 < item < len(tuple):
+    if 0 < item <= len(tuple):
         list.append(tuple[item-1])
         print("Item Addedd!")
     else:
@@ -46,8 +46,8 @@ def remove_item(list):
         remove_item = int(input("Enter Item Number to Remove: "))
 
         #check for exception
-        if 0 < remove_item < len(cart):
-            del list[remove_item-1]
+        if 0 < remove_item <= len(cart):
+            del list[remove_item - 1]
             print("Item Removed!")
         else:
             print("Invalid Input!")
