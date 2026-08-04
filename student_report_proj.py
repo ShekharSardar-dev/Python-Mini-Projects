@@ -24,7 +24,7 @@ def add_student(students_list):
     sub = ['Maths', 'Science', 'English']
     #loop for inputing marks
     for i in range(3):
-        mark = int(input(f"Enter {sub[0]} Marks: "))
+        mark = int(input(f"Enter {sub[i]} Marks: "))
         marks_tuple = marks_tuple + (mark,)
         total += marks_tuple[i]
 
